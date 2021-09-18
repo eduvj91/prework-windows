@@ -58,4 +58,4 @@ Es una libreria de freamworks y dependencias que la comunidad de desarrolladores
 
 Recordemos que con sudo antes de cualquier comando lo hacemos con permisos de administrador, con lo cual nos pedira la contraseñá del usuario creado en ubunto no la del sistema windows.
 
-
+Haciendo algunos cambios para poder ver si funciona github.
