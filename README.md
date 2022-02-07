@@ -31,20 +31,14 @@ En este caso vamos a seguir los pasos de instalación normal de la liga de windo
 
 [WSL2 enlace](https://docs.microsoft.com/en-us/windows/wsl/install-win10)
 
-Hay un paso importante cuando tratamos de cambiar la version a WSL 2
-
-`wsl --set-default-version 2`
-
-Al parecer lanza un error de que no se encuentra correctamente instalado yo reinicie mi máquina y después volví a poner el comando de arriba y funciono.
-
-Algo más que encontré es que hay que ejecutar el la actualización del kernel de linux que nos da la documentación de windows para poder cambiar a la version 2
-
-Nota.- Toda la instalación y configuración se realizan desde Windows Power Shell con permisos de administrador.
+> Nota.- Toda la instalación y configuración se realizan desde Windows Power Shell con permisos de administrador.
+> Nota.- Reiniciar la computadora después de instalar WSL para que funcione correctamente todo. 
 
 # Configuración de Ubuntu en WSL
 
 Cuando iniciamos Ubuntu generalmente nos pedirá crear un usuario y contraseña para poder entrar al WSL Ubuntu. Después de esto es importante lo siguiente:
 
+Importante:
 - Que los proyectos para desarrollo estén creados dentro de la carpeta del usuario de Ubuntu.
 - No crear o mover archivos desde el explorador de archivos.
 
@@ -56,13 +50,14 @@ Es un run time environment, un ambiente de ejecución para escribir comandos de 
 
 Linux y WSL son SO de software libre, los cuales usan algo llamado gestor de paquetes o handler de dependencias; podrían ser considerado como la tienda de herramientas para estos SO, lo cual son un repositorio de dependencias.
 
-Con el comando dentro de Ubuntu: `sudo apt-get update (para actualizar las dependencias)`
-Ahora que esta actualizadas las dependencias hay que aplicarlas con el comando: `sudo apt-get upgrade`
-Siguiente paso es instalar node.js para esto usamos el comando de instalación: `sudo apt install <dependencia>`
-Confirmar la version instaladas: `node -v`
+- Con el comando dentro de Ubuntu: `sudo apt-get update (para actualizar las dependencias)`
+- Ahora que esta actualizadas las dependencias hay que aplicarlas con el comando: `sudo apt-get upgrade`
+- Siguiente paso es instalar node.js para esto usamos el comando de instalación: `sudo apt install <dependencia>`
+- Confirmar la version instaladas: `node -v`
 
 > Como instalar la ultima version estable de node
-Enlace:<https://midu.dev/como-instalar-node-en-mac-y-windows/>
+
+Enlace: <https://midu.dev/como-instalar-node-en-mac-y-windows/>
 
 Instalaremos npm que es el handler de paquetes de node
 ´sudo apt install npm´
@@ -74,4 +69,4 @@ Recordemos que con sudo antes de cualquier comando lo hacemos con permisos de ad
 
 Haciendo algunos cambios para poder ver si funciona github.
 
-Instala git a su ultima version:<https://www.bytesized.xyz/how-to-update-git-in-ubuntu-windows-subsystem-for-linux/>
+Instala git a su ultima version: <https://www.bytesized.xyz/how-to-update-git-in-ubuntu-windows-subsystem-for-linux/>
