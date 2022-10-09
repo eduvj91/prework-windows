@@ -50,9 +50,10 @@ Antes de seguir instalando personalizaremos nuestra terminal y cambiaremos la sh
 ## Personalizando terminal para el trabajo con NVIM
 
 1. Seguimos la instrucciones para instalar oh-myzsh [aquí](https://github.com/ohmyzsh/ohmyzsh/wiki)
-2. Instalamos tema para oh-mayzsh *powerlevel10k* [aquí](https://github.com/romkatv/powerlevel10k#installation)
+2. Instalamos tema para oh-mayzsh **powerlevel10k** [aquí](https://github.com/romkatv/powerlevel10k#installation)
 3. Instalanmos plugins para oh-myzsh [plugins recomendados](https://gist.github.com/n1snt/454b879b8f0b7995740ae04c5fb5b7df)
 4. Configuramos vim para trabajar y neovim después de instalar ahora si los siguientes puntos, node y git.
+5. Instalar figlet para los títulos ASCII en vim, descargamos la fuente deseada y la pegamos en `/user/share/figelt/`
 
 # Comandos básicos de la terminal e instalación de Node.js
 
@@ -97,4 +98,5 @@ Para esto hemos creado un repo en GitHub con todas las configuraciones necesaria
 4. Descargamos Vim-Plug para los complementos de vim.
 5. Creamos enlace simbolico para nuestro .vimrc que esta dentro de .config
 6. Instala la ultima version de Vim y NeoVim [Vim PPA](https://www.ochobitshacenunbyte.com/2021/02/15/instalar-la-ultima-version-de-vim-en-linux/) y [Nvim PPA](https://es.linuxcapable.com/how-to-install-neovim-editor-on-ubuntu-22-04-lts/)
-7. En vim si aparece error de idomas solo poner en la linea de comandos set spell y nos ayudara a descargar los ficheros en .vim/local/spell y para neovim en .local/share/spell.
+7. En vim si aparece error de idiomas solo poner en la linea de comandos set spell y nos ayudara a descargar los ficheros en .vim/local/spell y para neovim en .local/share/spell.
+8. Para Windows tenemos que solucionar el paso del porta papeles, creamos el enlace simbólico `sudo ln -s ~/.config/.vim/win32yank.exe /usr/bin/win32yank.exe`
